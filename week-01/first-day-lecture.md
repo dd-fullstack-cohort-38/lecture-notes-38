@@ -101,7 +101,7 @@
     - cohort-web-37
     - current-community
 - Calendar: https://calendar.google.com/calendar?cid=Ym9vdGNhbXBjb2RlcnNAZ21haWwuY29t
-- GitHub: https://github.com/dd-fullstack-cohort-37
+- GitHub: https://github.com/dd-fullstack-cohort-38
     - All relevant example and other repos posted there
     - Lecture Notes and assignments found in the lecture-notes repo
 - Note taking tools
