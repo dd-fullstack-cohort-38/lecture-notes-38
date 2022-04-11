@@ -98,7 +98,7 @@
 - Slack
     - best way to reach instructors
     - each of you has your own channel
-    - cohort-web-37
+    - cohort-web-38
     - current-community
 - Calendar: https://calendar.google.com/calendar?cid=Ym9vdGNhbXBjb2RlcnNAZ21haWwuY29t
 - GitHub: https://github.com/dd-fullstack-cohort-38
