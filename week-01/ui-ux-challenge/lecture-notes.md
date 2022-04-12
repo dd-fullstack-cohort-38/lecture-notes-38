@@ -35,7 +35,7 @@
         -   Why choose your site over other options?
     -   Anything else that is specifically relevant to your application
 -   Match these personas to a role, like Power User, Admin, First-time Visitor, Casual User, etc.
--   Example:  [https://dribbble.com/shots/3052941-UX-Persona-for-Book-App](https://slack-redir.net/link?url=https%3A%2F%2Fdribbble.com%2Fshots%2F3052941-UX-Persona-for-Book-App)
+-   Example:  [https://dribbble.com/shots/3052941-UX-Persona-for-Book-App](https://dribbble.com/shots/3052941-UX-Persona-for-Book-App)
 -   Class exercise: Let's come up with a user profile for an idealized Twitter user
 ### User Stories
 **user story**  - one sentence statement of what a user will do
