@@ -1,4 +1,4 @@
-# Snap Challenge 1
+# Code Along 1
 Write two functions in javascript. Make sure that you put them in your GitHub Classroom account in code along project.  Put them in a folder called "snap-01"
 
 ### Function #1
