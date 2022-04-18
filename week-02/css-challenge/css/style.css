@@ -1,0 +1,173 @@
+/*****************************************************
+* CSS Mockup Activity - Custom CSS Stylesheet
+* @author rlewis37
+*
+* Some rules have been included here to give you a head start.
+* Create your own custom CSS rules below. Have fun!
+******************************************************/
+html, body {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/* create a responsive container */
+@media only screen and (min-width: 1200px) {
+	.container { width: 1170px; }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.container { width: 970px; }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.container { width: 750px; }
+}
+
+/*****************************************************
+* Flexbox Sticky Footer
+* http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+******************************************************/
+
+/*corrects IE min-height bug*/
+html { display: flex;}
+body { width: 100%;}
+
+.sfooter {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.sfooter-content {
+	flex: 1 0 auto;
+}
+
+/*****************************************************
+* ADD YOUR OWN CSS BELOW! (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+*
+* HINT: You might want to be conversant with the following:
+* * Shorthand syntax for padding, margin, and borders
+* * Display property and values... and the differences between them.
+* * The Box Model
+* * Pseudo Classes
+* * Attribute Selectors
+******************************************************/
+
+header{
+	background-color: #333333 ;
+	color: rgb(0, 255, 0);
+}
+
+h1{
+	display: inline-block;
+	font-size: 2.5rem;
+	font-weight: bolder;
+	margin-right: 1.5rem;
+}
+
+body{
+	font-family: Cousine, monospace;
+}
+
+section{
+	padding: 3rem 0;
+}
+
+img[src*="welcome"]{
+	margin: 0 auto 2rem;
+	display: block;
+}
+
+.instructions-wrapper{
+	border: 5px solid black;
+	display: flex;
+	padding: 30px;
+}
+
+.instructions-wrapper img{
+	/*flex: 1;*/
+	height: auto;
+	width: 250px;
+}
+
+.instructions-content{
+	/*flex: 3;*/
+	padding-right: 20rem;
+}
+
+.about-me{
+	background-color: blue;
+	color: white;
+}
+
+span{
+	color: yellow;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.about-me img{
+	width: 20vw;
+	border: .2em solid white;
+	float: left;
+	margin-right: 2em;
+}
+
+section:nth-child(4) h2{
+	text-align: right;
+}
+
+th, td{
+	background-color: #333333;
+	color: rgb(0, 255, 0);
+	padding: 1em;
+	text-align: left;
+}
+
+table{
+	width: 100%;
+}
+
+section:nth-child(5){
+	background-color: #333333;
+}
+
+.form-wrapper{
+	background-color: rgb(0, 100, 0);
+	color: rgb(0, 255, 0);
+	padding: 2em;
+}
+
+label{
+	display: flex;
+	margin: 15px 0 5px;
+}
+
+input, textarea{
+	width: 33%;
+	padding: 8px;
+}
+
+button{
+	background-color: rgb(0, 255, 0);
+	border: none;
+	font-weight: bold;
+	padding: .5rem 2.8rem;
+	margin-top: 15px;
+}
+
+footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+}
