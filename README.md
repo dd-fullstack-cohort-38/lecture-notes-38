@@ -9,6 +9,7 @@ Lecture notes, assignments, and other resources for Fullstack Cohort 38. This re
 All assignments are due before class at 8:00 a.m. on the due date.
 
 ### Outstanding
+* [Bootstrap Challenge Due Tuesday 4/26](https://classroom.github.com/a/uGB47OJe)
 * [UI UX Challenge Due Friday 4-15-22](https://classroom.github.com/a/q6mHe4HP)
 * [CSS Challenge Due Monday 4-18-22](https://classroom.github.com/a/fJWKWiFf)
 
