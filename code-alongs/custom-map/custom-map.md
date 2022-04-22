@@ -1,0 +1,1 @@
+Using a function recreate the map array prototype. The recreation should take two arguments, the first argument should be the array being mapped, the second argument should be a callback on how to change each element in the array.  
