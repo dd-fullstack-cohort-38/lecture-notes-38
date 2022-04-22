@@ -10,6 +10,10 @@ function recreateMap (ourArray, ourCallbackFunction) {
 }
 
 let myArray = [5, 3, 9, 2]
-let myDoubledArray = recreateMap(myArray, myArrayElement => myArrayElement * 2
-)
+
+let doubleFunction = myArrayElement => myArrayElement * 2
+
+// function longhandDoubleFunction (myArrayElement) {return myArrayElement * 2}
+
+let myDoubledArray = recreateMap(myArray, doubleFunction)
 console.log(myDoubledArray)
