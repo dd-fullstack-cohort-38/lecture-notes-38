@@ -39,6 +39,10 @@ console.log(finalValue)
 // Using the return keyword we can have a value computed inside the function exposed to the outside world
 
 
+function addition(number1, number2) {
+  return number1 + number2
+}
 
+console.log(addition(1, 4))
 
 
