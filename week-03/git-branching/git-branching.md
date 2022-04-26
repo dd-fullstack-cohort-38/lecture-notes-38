@@ -1,14 +1,4 @@
 # Git Branching and Git Flow
-
-### Capstone setup
-One member of each team
-- Create an organization in Github. Make sure you choose the link for open source at the pricing page, so that you don't get charged for the organization.
-    - https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-organizations-and-teams/creating-a-new-organization-from-scratch
-- Invite the rest of the members as owners of that organization.
-    - https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-organizations-and-teams/inviting-users-to-join-your-organization
-- Create a repository in that organization for your existing code.
-- Post the link in your capstone channel
-
 ## Branches
 A **branch** is a sandbox, cloistered off because it isn't ready to be merged into the main line of
 development yet.
