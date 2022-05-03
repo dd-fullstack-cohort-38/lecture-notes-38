@@ -60,3 +60,31 @@ function shuffleWords () {
   })
   document.getElementById('find-replace').innerText = arrayOfWords.join(' ')
 }
+
+function scrollDelete () {
+  let paragraph1 = document.getElementById('paragraph1')
+  let arrayOfWords = paragraph1.innerText.split(' ')
+  arrayOfWords.pop()
+  paragraph1.innerText = arrayOfWords.join(' ')
+}
+
+function encrypt () {
+  console.log('a ', 'a'.charCodeAt(0))
+  let pTag3 = document.getElementById('encryptMe')
+  let paragraph = pTag3.innerText
+  let codedParagraph = paragraph.split('').map(character => {
+    if (character.toLowerCase().charCodeAt(0) < 97 || character.toLowerCase().charCodeAt(0) > 123) {
+      return character
+    }else if(character.toLowerCase().charCodeAt(0) > 109) {
+      return String.fromCharCode(character.toLowerCase().charCodeAt(0) - 13)
+    }else{
+      return String.fromCharCode(character.toLowerCase().charCodeAt(0) + 13)
+    }
+  })
+  pTag3.innerText = codedParagraph.join('')
+}
+
+
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(json => document.getElementById('jsonPlaceholder').innerText = json.title)
