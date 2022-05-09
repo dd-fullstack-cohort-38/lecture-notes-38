@@ -1,7 +1,7 @@
 # Advanced Express and Database Functions
 
 ## How Express works
-![Express Diagram](../img/express-diagram.png)
+![Express Diagram](./img/express-diagram.png)
 * Express is between the database (MySQL) and the webserver (nginx)
 * Express translates our data into JSON objects provided by our API
 * Step 1: Request -> Session -> Router
