@@ -1,4 +1,4 @@
-Using the [backend challenge repo](https://github.com/GKephart/backend-code-alongs) write two mysql enabled functions one for  inserting a status and one for selecting all statuses based on the DDL provided below
+Using the [backend challenge repo](https://github.com/GKephart/backend-code-alongs) write two mysql enabled functions one for  inserting a tag and one for selecting all tags based on the DDL provided below
 ```sql
 drop table if exists articleTag;
 drop table if exists article;
