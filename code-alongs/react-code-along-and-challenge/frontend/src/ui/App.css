@@ -1,0 +1,5 @@
+.backgroundImage{
+	background: url("http://www.fillmurray.com/600/300") no-repeat center center fixed;
+	background-size: cover;
+	height: 35rem;
+}

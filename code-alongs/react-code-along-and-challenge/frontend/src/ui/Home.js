@@ -1,8 +1,21 @@
 import React from 'react'
-import { Col, Container, Image, Row } from 'react-bootstrap'
+import { Button, Col, Container, Image, Row } from 'react-bootstrap'
 import { Testimonial } from './Testimonial'
 
 export function Home () {
+  let testimonials = [
+    {imageUrl: 'http://www.fillmurray.com/300/300',
+    message: 'in your handwriting? Id get kicked out of school. You wouldnt want that to happen would you, would'},
+    {imageUrl: 'http://www.fillmurray.com/400/400',
+    message: 'did I ever expect to get back, one pallet one trip I must be out of my mind. What is it Einy?'},
+    {imageUrl: 'http://www.fillmurray.com/350/350',
+    message: 'Do you mind if we park for a while? Indeed I will, roll em. I, Doctor Emmett Brown, am about to embark'},
+    {imageUrl: 'http://www.fillmurray.com/450/450',
+    message: 'him with the car. Marty, you didnt fall asleep, did you? Calvin, why do you keep calling me Calvin?'}
+  ]
+
+
+
   return (
     <>
       <Container>
@@ -10,7 +23,7 @@ export function Home () {
           <h1 className="display-4">Hello, world!</h1>
           <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
             to featured content or information.</p>
-          <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          <Button className="btn btn-primary btn-lg" role="button">Learn more</Button>
         </div>
       </Container>
 
@@ -38,10 +51,7 @@ export function Home () {
 
       <Container>
         <Row className="py-5 g-5">
-          <Testimonial/>
-          <Testimonial/>
-          <Testimonial/>
-          <Testimonial/>
+          {testimonials.map((testimonial, index) => <Testimonial testimonial={testimonial} key={index}/>)}
         </Row>
       </Container>
 
