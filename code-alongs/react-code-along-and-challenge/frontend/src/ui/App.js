@@ -12,13 +12,13 @@ export function App() {
 	return(
 		<>
 			<BrowserRouter>
-				{/*<Navigation/>*/}
+				<Navigation/>
 				<Switch>
 					<Route exact path='/' component={Home} />
 					<Route exact path='/another' component={AnotherPage} />
 					<Route exact path='/dolls' component={CreepyDolls} />
 				</Switch>
-				{/*<Footer/>*/}
+				<Footer/>
 			</BrowserRouter>
 		</>
 	)
