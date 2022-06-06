@@ -111,7 +111,7 @@
   ```
 - Add `frontend/src/ui/App.js`
     - This is typical App.js with Redux imported and the store wrapping our components.
-  ```jsx
+```jsx
   // Import basic front-end tools.
   import React from "react";
   import 'bootstrap/dist/css/bootstrap.css';
@@ -158,16 +158,17 @@
   </Provider>
   )
 };
+
 ```
 - Create a new `frontend/src/ui/posts` directory
 - Move `./frontend/src/ui/Posts.js` to `./frontend/src/ui/posts/Posts.js`
-- Add our data to our frontend component in `frontend/src/ui/Posts.js`
+- Add our data to our frontend component in `frontend/src/ui/posts/Posts.js`
     - Add imports
       ```js
       import { fetchAllMisquotes } from '../../store/misquote'
-      import { PostCard } from './PostCard'
+      import { useDispatch, useSelector } from 'react-redux'
       ```
-    - In our Posts constant, add a call to redux
+    - In the Posts Component dispatch fetchAllMisquotes thunk in useEffect and grab misquotes from redux using useSelector
       ```js
       export const Posts = () => {
         
@@ -186,8 +187,8 @@
     - If you did this correctly, when you visit localhost:3000/posts and look at your console, you'll see two logs - one from before you got your data, one afterwards.
 
 - Create a new `frontend/src/ui/posts/PostCard.js` component
-  ```jsx
-  import React from 'react'
+```jsx
+import React from 'react'
 import { Card, Col } from 'react-bootstrap'
 
 export const PostCard = ({misquote}) => {
@@ -198,22 +199,22 @@ export const PostCard = ({misquote}) => {
         <div className="card-body">
           <Card.Title>{misquote.misquoteAttribution}</Card.Title>
           <Card.Text >
-            <p>{misquote.misquoteContent}</p>
-            <p><small className="text-muted">{misquote.misquoteSubmitter}</small></p>
+            {misquote.misquoteContent}  
+            <small className="text-muted">{misquote.misquoteSubmitter}</small>
           </Card.Text>
         </div>
       </Card>
     </Col>
   )
 }
+```
 
-  ```
-- Move `frontend/src/ui/Posts.js` to `frontend/src/ui/posts/Posts.js`
-  - Replace our Card in here with a mapping function
-    ```js
-    <CardColumns className="p-4">
-      {misquotes.map(misquote => <PostCard key={misquote.misquoteId} misquote={misquote} />)}
-    </CardColumns>
+  - Replace markup for static card in `./frontend/src/posts/Posts.js` with a map function that creates as many PostCard components as objects in the array returned by `const misquotes = useSelector((state) => state.misquotes ? state.misquotes : [])`
+
+    ```jsx
+    <Row className=" py-3 row-cols-1 row-cols-md-3 g-4">
+      {misquotes.map(misquote => <PostCard misquote={misquote} key={misquote.id}/>)}
+    </Row>
     ```
 
 ## Recommended Reading
